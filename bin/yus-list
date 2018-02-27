@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+const chalk = require('chalk')
+const request = require('request')
+const logger = require('../lib/logger')
+
+/**
+ * Padding.
+ */
+console.log()
+process.on('exit', () => {
+  console.log()
+})
+
+ /**
+ * List repos.
+ */
+request({
+  url: 'https://api.github.com/users/CN-kicoyu/repos',
+  headers: {
+    'User-Agent': 'yus-cli'
+  }
+}, (err, res, body) => {
+  if (err) logger.fatal(err)
+  const requestBody = JSON.parse(body)
+  if (Array.isArray(requestBody)) {
+    console.log('  Available official templates:')
+    console.log()
+    requestBody.forEach(repo => {
+      if (repo.name.indexOf('yus-cli-template') > -1) {
+        console.log(
+          '  ' + chalk.yellow('★') +
+          '  ' + chalk.blue(repo.name) +
+          ' - ' + repo.description)
+      }
+    })
+  } else {
+    console.error(requestBody.message)
+  }
+})

@@ -1,0 +1,48 @@
+{
+  "name": "yus-cli",
+  "version": "1.0.0",
+  "description": "A simple, fast, and fun CLI for scaffolding projects",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CN-kicoyu/yus-cli.git"
+  },
+  "keywords": [
+    "CLI",
+    "webpack"
+  ],
+  "bin": {
+    "yus": "bin/yus",
+    "yus-init": "bin/yus-init",
+    "yus-list": "bin/yus-list"
+  },
+  "author": "kicoyu < kicoyu@126.com >",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CN-kicoyu/yus-cli/issues"
+  },
+  "homepage": "https://github.com/CN-kicoyu/yus-cli#readme",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "chalk": "^2.3.1",
+    "coffee-script": "^1.12.7",
+    "commander": "^2.14.1",
+    "consolidate": "^0.15.0",
+    "download-git-repo": "^1.0.2",
+    "handlebars": "^4.0.11",
+    "inquirer": "^5.1.0",
+    "metalsmith": "^2.3.0",
+    "minimatch": "^3.0.4",
+    "multimatch": "^2.1.0",
+    "ora": "^2.0.0",
+    "read-metadata": "^1.0.0",
+    "request": "^2.83.0",
+    "rimraf": "^2.6.2",
+    "semver": "^5.5.0",
+    "tildify": "^1.2.0",
+    "user-home": "^2.0.0",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}

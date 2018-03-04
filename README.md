@@ -26,4 +26,6 @@ $ yus init miniapp my-project
 
 - [miniapp](https://github.com/CN-kicoyu/yus-cli-template-miniapp) - A template devoted to developing wechat or alipay mini-app
 
+- [multi-vue](https://github.com/CN-kicoyu/yus-cli-template-multi-vue) - Multi-Pages project template for vue.js
+
 - [react](https://github.com/CN-kicoyu/yus-cli-template-react) - A full-featured Webpack + react + react-router4 + redux + PWA setup with hot reload, linting & css extraction.
